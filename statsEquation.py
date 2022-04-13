@@ -3,7 +3,7 @@ class statsEquation():
     
     #Calculation of HP
     def hpcal(base, IV, EV, level):
-        hp = (((2 * base + IV +(EV/4)*level)/100)+ level + 10
+        hp = (((2 * base + IV +(EV/4)*level)/100)+ level)+ 10
         return hp
 
     #Calculation of Attack Stat
