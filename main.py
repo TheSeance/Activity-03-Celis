@@ -83,7 +83,7 @@ def EVcalculator():
 
 
     #Ask user   
-    choice = int (input("1 - Single Stat or 2 - All Stats"))
+    choice = int (input("1 - Single Stat or 2 - All Stats: "))
     if choice > 2:
             print("Please select from 1 and 2 only")
             EVcalculator()
@@ -126,11 +126,16 @@ def Menu():
         Menu()
 
 Menu()
-user1=input("Do you want the program to run again? y/n")
+
+user1=input("Do you want the program to run again? y/n: ")
+
 if user1 == "Y" or "y":
     Menu()
-else:
+elif user1 == "N" or "n":
     print("Thank you! Have a great day")
+    exit()
+else:
+    print("Bye")
     exit()
 
         
